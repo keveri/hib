@@ -4,9 +4,14 @@ import Control.Monad.Reader
 import System.IO
 
 data Message = Msg
-  { msgUser :: String
+  { msgUser    :: String
   , msgChannel :: String
   , msgContent :: String
+  }
+
+data Plugin = Plugin
+  { pName :: String
+  , pF    :: Message -> String
   }
 
 data HibConfig = HibConfig
