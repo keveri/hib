@@ -21,12 +21,15 @@ executable hib
     Hib.Network,
     Hib.Command,
     Hib.Core,
-    Hib.Config
-    Hib.Plugins.Id
+    Hib.Config,
+    Hib.Plugins.Id,
+    Hib.Plugins.Piato
   default-language:    Haskell2010
   build-depends:
     base         >= 4.7 && < 5,
     network      >= 2.6,
     mtl          >= 2.2,
     containers   >= 0.5,
-    configurator >= 0.3
+    configurator >= 0.3,
+    xml          >= 1.3,
+    HTTP         >= 4000.2

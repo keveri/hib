@@ -11,7 +11,7 @@ data Message = Msg
 
 data Plugin = Plugin
   { pName :: String
-  , pF    :: Message -> String
+  , pFn   :: Message -> IO String
   }
 
 data HibConfig = HibConfig

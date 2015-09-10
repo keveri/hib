@@ -28,7 +28,7 @@ evalCommand s = do
     conf <- asks config
     let msg = readMsg s
     if validateMessage conf msg
-      then writePrivMsg $ getCommand msg
+      then writePrivMsg =<< liftIO (runCommand msg)
       else return ()
 
 -- Response PONG or evaluate command.
