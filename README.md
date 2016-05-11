@@ -5,3 +5,8 @@
 Simple IRC bot testing, still a work in progress.
 
 Also trying out project structure and `stack`.
+
+
+Build: `stack build`
+
+Run: `stack exec hib`
